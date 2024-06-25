@@ -1,0 +1,49 @@
+$bg_gradient: linear-gradient(180deg, #fde1ff,#e1ffea22 60%);
+$Nav_bg:rgb(240, 214, 219);
+$Text_black:black;
+$Text_white:rgb(231, 227, 227);
+$Text_hover:#7a6666;
+$Button_bg:rgb(252, 126, 81);
+$Count_bg:red;
+$Button_hero_bg:#ff4141;
+$HR_bg:#252525;
+$login_BG:#fce3fe;
+$login_input:#5c5c5c;
+$white:#fff;
+$fade_bg:#fbfbfb;
+$fade_color: #555;
+$Admin_sidebar_bg:#f6f6f6;
+
+.sidebar{
+   display: flex;
+   flex-direction: column;
+   padding-top: 30px;
+   gap: 20px;
+   width: 100%;
+   max-width: 250px;
+   height: 100vh;
+   background: $white;
+   .sidebar_item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      gap: 30px;
+      cursor: pointer;
+      background: $Admin_sidebar_bg;
+   }
+   @media (max-width:800px) {
+      padding: 30px 0;
+      flex-direction: row;
+      width: 100%;
+      max-width: none;
+      height: auto;
+      justify-content: center;
+      .sidebar_item{
+         margin: 0;
+      }
+   }
+}
+

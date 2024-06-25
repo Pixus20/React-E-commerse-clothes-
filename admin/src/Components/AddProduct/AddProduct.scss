@@ -1,0 +1,86 @@
+$bg_gradient: linear-gradient(180deg, #fde1ff,#e1ffea22 60%);
+$Nav_bg:rgb(240, 214, 219);
+$Text_black:black;
+$Text_white:rgb(231, 227, 227);
+$Text_hover:#7a6666;
+$Button_bg:rgb(252, 126, 81);
+$Count_bg:red;
+$Button_hero_bg:#ff4141;
+$HR_bg:#252525;
+$login_BG:#fce3fe;
+$login_input:#5c5c5c;
+$white:#fff;
+$fade_bg:#fbfbfb;
+$fade_color: #555;
+$Admin_sidebar_bg:#f6f6f6;
+$AddProduct_text:#7b7b7b;
+$AddProduct_Button_BG:#6079ff;
+
+
+.addproduct{
+   box-sizing: border-box;
+   width: 100%;
+   max-width: 800px;
+   padding: 30px 15px;
+   margin: 20px 30px;
+   border-radius: 6px;
+   background: $white;
+   .addproduct_itemfield{
+      width: 100%;
+      color:$AddProduct_text ;
+      font-size: 16px;
+      input{
+         box-sizing: border-box;
+         width: 100%;
+         height: 50px;
+         border-radius: 4px;
+         padding-left: 15px;
+         border: 1px solid $login_input;
+         outline: none;
+         color: $AddProduct_text;
+         font-family: 'Popins';
+         font-size: 14px;
+      }
+      .addproduct_selector{
+         padding: 10px;
+         width: 100px;
+         height: 50px;
+         font-size: 14px;
+         color: $AddProduct_text;
+         border: 1px solid $login_input;
+         border-radius: 4px;
+      }
+      label{
+         .addproduct_thunmail_img{
+            height: 120px;
+            width: 120px;
+            border-radius: 10px;
+            object-fit: contain;
+            margin: 10px 0;
+         }
+      }
+   }
+   .addproduct_price{
+      display: flex;
+      gap: 40px;
+   }
+   .addproduct_btn{
+      margin-top: 20px;
+      width: 160px;
+      height: 50px;
+      border-radius: 6px;
+      background: $AddProduct_Button_BG;
+      border: none;
+      cursor: pointer;
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+   }
+   @media (max-width:800px) {
+      width: auto;
+      padding: 30px;
+      margin: 20px;
+      
+   }
+}
+

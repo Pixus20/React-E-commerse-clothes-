@@ -1,0 +1,25 @@
+$bg_gradient: linear-gradient(180deg, #fde1ff,#e1ffea22 60%);
+$Nav_bg:rgb(240, 214, 219);
+$Text_black:black;
+$Text_white:rgb(231, 227, 227);
+$Text_hover:#7a6666;
+$Button_bg:rgb(252, 126, 81);
+$Count_bg:red;
+$Button_hero_bg:#ff4141;
+$HR_bg:#252525;
+$login_BG:#fce3fe;
+$login_input:#5c5c5c;
+$white:#fff;
+$fade_bg:#fbfbfb;
+$fade_color: #555;
+
+*{
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   margin: 0;
+   padding: 0;
+}
+body{
+   background: $fade_bg;
+   height: 100vh;
+}

@@ -1,0 +1,71 @@
+$bg_gradient: linear-gradient(180deg, #fde1ff,#e1ffea22 60%);
+$Nav_bg:rgb(240, 214, 219);
+$Text_black:black;
+$Text_white:rgb(231, 227, 227);
+$Text_hover:#7a6666;
+$Button_bg:rgb(252, 126, 81);
+$Count_bg:red;
+$Button_hero_bg:#ff4141;
+$HR_bg:#252525;
+$login_BG:#fce3fe;
+$login_input:#5c5c5c;
+$white:#fff;
+$fade_bg:#fbfbfb;
+$fade_color: #555;
+$Admin_sidebar_bg:#f6f6f6;
+
+.listproduct{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 740px;
+   padding: 10px 15px;
+   margin: 30px;
+   border-radius: 6px;
+   background: $white;
+   .listproduct_format_main{
+      display: grid;
+      grid-template-columns:1fr 3fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+      padding: 20px 0;
+      color: $fade_color;
+      font-size: 15px;
+      font-weight: 600;
+   }
+   .listproduct_allproducts{
+      width: 100%;
+      .listproduct_format{
+         align-items: center;
+         font-weight: 500;
+         .listproduct_product_icon{
+            height: 80px;
+         }
+         .listproduct_remove_icon{
+            cursor: pointer;
+            margin: auto;
+         }
+      }
+   }
+   @media (max-width:800px) {
+      box-sizing: border-box;
+      width: 95%;
+      height: 100%;
+      padding: 10px 30px;
+      margin: 20px auto;
+      .listproduct_format_main{
+         padding: 15px 0;
+         color: $fade_color;
+         font-size: 12px;
+      }
+      .listproduct_allproducts{
+         .listproduct_format{
+            .listproduct_product_icon{
+               height: 60px;
+               
+            }
+         }
+      }
+   }
+}
